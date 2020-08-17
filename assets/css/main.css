@@ -3965,11 +3965,34 @@ input, select, textarea {
 	}
 
 	.explainer {
-		background: #fff;
+		background: #F1F2F2;
 		color: #242943;
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
+		.explainer.style1 {
+			box-shadow: 5px 5px 0px #64AFD8;
+		}
+
+		.explainer.style2 {
+			box-shadow: 5px 5px 0px #8d82c4;
+		}
+
+		.explainer.style3 {
+			box-shadow: 5px 5px 0px #F0403D;
+		}
+
+		.explainer.style4 {
+			box-shadow: 5px 5px 0px #F5813E;
+		}
+
+		.explainer.style5 {
+			box-shadow: 5px 5px 0px #FCC650;
+		}
+
+		.explainer.style6 {
+			box-shadow: 5px 5px 0px #34B575;
+		}
 
 	.explainer h4 {
 		color: #242943;
