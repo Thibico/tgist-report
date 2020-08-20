@@ -3135,6 +3135,7 @@ input, select, textarea {
 			display: inline-block;
 			font-size: 0.8em;
 			height: inherit;
+			max-height: 50px;
 			line-height: inherit;
 			padding: 0 1.5em;
 		}
@@ -4012,32 +4013,32 @@ input, select, textarea {
 	    padding: 20px;
 	    text-align: justify;
 	}
-		.insight.style1 {
+		.insight.style1, blockquote.style1  {
 			color: #64AFD8;
 			border-color: #64AFD8;
 		}
 
-		.insight.style2 {
+		.insight.style2, blockquote.style2  {
 			color: #8d82c4;
 			border-color: #8d82c4;
 		}
 
-		.insight.style3 {
+		.insight.style3, blockquote.style3  {
 			color: #F0403D;
 			border-color: #F0403D;
 		}
 
-		.insight.style4 {
+		.insight.style4, blockquote.style4  {
 			color: #F5813E;
 			border-color: #F5813E;
 		}
 
-		.insight.style5 {
+		.insight.style5, blockquote.style5  {
 			color: #FCC650;
 			border-color: #FCC650;
 		}
 
-		.insight.style6 {
+		.insight.style6, blockquote.style6  {
 			color: #34B575;
 			border-color: #34B575;
 		}
