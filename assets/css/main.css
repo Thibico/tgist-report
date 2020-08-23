@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700;900&display=swap');
 
 /*
 	Forty by HTML5 UP
@@ -117,9 +118,9 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Titillium Web', sans-serif;
 		font-size: 17pt;
-		font-weight: 300;
+		font-weight: 400;
 		letter-spacing: 0.025em;
 		line-height: 1.65;
 	}
@@ -3420,7 +3421,7 @@ input, select, textarea {
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.4;
+			opacity: 0.8;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3489,6 +3490,10 @@ input, select, textarea {
 			height: 75vh;
 			min-height: 30em;
 			max-height: 50em;
+		}
+
+		#banner.major:after {
+			opacity: 0.4;
 		}
 
 			#banner.major.alt {
@@ -4006,16 +4011,59 @@ input, select, textarea {
 	    padding-top: 10px;
 	}
 
+	.callout {
+		border: 2px solid #fff;
+		padding: 20px;
+		margin-bottom: 2em;
+	}
+
+	.callout.style1 {
+		border-color: #64AFD8;
+	}
+
+	.callout.style2 {
+		border-color: #8d82c4;
+	}
+
+	.callout.style3 {
+		border-color: #F0403D;
+	}
+
+	.callout.style4 {
+		border-color: #F5813E;
+	}
+
+	.callout.style5 {
+		border-color: #FCC650;
+	}
+
+	.callout.style6 {
+		border-color: #34B575;
+	}
+
 	.insight {
 		font-weight: bold;
 	    font-size: 1.5em;
 	    border: 1px solid;
-	    padding: 20px;
+	    padding: 30px 20px 20px 20px;
 	    text-align: justify;
+	    position: relative;
+	}
+	.insight .insight_num {
+		position: absolute;
+	    top: 0;
+	    left: 0;
+	    font-size: 15px;
+	    padding: 3px;
+	    color: #2a2f4a;
 	}
 		.insight.style1, blockquote.style1  {
 			color: #64AFD8;
 			border-color: #64AFD8;
+		}
+
+		.insight.style1 .insight_num {
+			background: #64AFD8;
 		}
 
 		.insight.style2, blockquote.style2  {
@@ -4023,9 +4071,17 @@ input, select, textarea {
 			border-color: #8d82c4;
 		}
 
+		.insight.style2 .insight_num {
+			background: #8d82c4;
+		}
+
 		.insight.style3, blockquote.style3  {
 			color: #F0403D;
 			border-color: #F0403D;
+		}
+
+		.insight.style3 .insight_num {
+			background: #F0403D;
 		}
 
 		.insight.style4, blockquote.style4  {
@@ -4033,12 +4089,81 @@ input, select, textarea {
 			border-color: #F5813E;
 		}
 
+		.insight.style4 .insight_num {
+			background: #F5813E;
+		}
+
 		.insight.style5, blockquote.style5  {
 			color: #FCC650;
 			border-color: #FCC650;
+		}
+
+		.insight.style5 .insight_num {
+			background: #FCC650;
 		}
 
 		.insight.style6, blockquote.style6  {
 			color: #34B575;
 			border-color: #34B575;
 		}
+
+		.insight.style6 .insight_num {
+			background: #34B575;
+		}
+
+	.cover_title {
+		background: #000;
+	    padding: 20px;
+	    width: fit-content;
+	    margin: auto;
+	    text-align: center;
+	    text-transform: uppercase;
+	}
+
+	.cover_title h1 {
+		font-weight: 900;
+		font-size: 2.5em !important;
+    	letter-spacing: 2px;
+    	margin:10px;
+	}
+
+	.cover_title p {
+		font-weight: 400;
+	}
+
+	.dots {
+		margin: 10px;
+	}
+
+	.dot {
+	  height: 8px;
+	  width: 8px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  margin: 4px;
+	}
+
+	.dot.blue {
+		background-color: #64AFD8;
+	}
+
+	.dot.green {
+		background-color: #34B575;	
+	}
+
+	.dot.yellow {
+		background-color: #FCC650
+	}
+
+	.dot.orange {
+		background-color: #F5813E;
+	}
+
+	.dot.red {
+		background-color: #F0403D;
+	}
+
+	.row {
+		margin-bottom: 2em;
+	}
