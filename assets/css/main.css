@@ -2079,7 +2079,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		border: solid 1px rgba(212, 212, 255, 0.1);
+		border: solid 1px rgba(212, 212, 255, 0.8);
 		margin-bottom: 2em;
 		padding: 1.5em;
 	}
@@ -3960,6 +3960,8 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+
 	.chapter_navigation {
 		overflow: hidden;
 	}
@@ -4166,4 +4168,11 @@ input, select, textarea {
 
 	.row {
 		margin-bottom: 2em;
+	}
+
+	blockquote > .quote_ref {
+		color: #fff;
+		font-size: 0.8em;
+		display: block;
+		text-align: right;
 	}
