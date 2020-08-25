@@ -2840,7 +2840,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #F0403D;
+				background-color: #34B575;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
@@ -2852,7 +2852,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #34B575;
+				background-color: #F0403D;
 			}
 
 		@media screen and (max-width: 1280px) {
