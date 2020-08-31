@@ -2744,9 +2744,9 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.25s ease, opacity 0.25s ease, -ms-filter 1s ease, -webkit-filter 1s ease;
 			transition: transform 0.25s ease, opacity 0.25s ease, filter 1s ease, -webkit-filter 1s ease;
 			padding: 4em 4em 2em 4em ;
-			background-position: center;
+			background-position: right;
 			background-repeat: no-repeat;
-			background-size: cover;
+			background-size: 50%;
 			cursor: default;
 			height: 40vh;
 			max-height: 40em;
@@ -2812,7 +2812,7 @@ input, select, textarea {
 			}
 
 			.tiles article:hover:before {
-				opacity: 0;
+				opacity: 0.4;
 			}
 
 			.tiles article.is-transitioning {
@@ -3115,7 +3115,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #2a2f4a;
+		background-color: #eee;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
 		font-weight: 600;
@@ -3200,10 +3200,15 @@ input, select, textarea {
 
 				#header nav a[href="#menu"] {
 					padding-right: 3.325em !important;
+					color: #2a2f4a;
+				}
+
+				#header nav a[href="#menu"]:hover {
+					color: #2e2e2e !important;
 				}
 
 					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
-						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
+						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %232a2f4a%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						background-position: center;
 						background-repeat: no-repeat;
 						background-size: 24px 32px;
@@ -3222,7 +3227,7 @@ input, select, textarea {
 						-webkit-transition: opacity 0.2s ease-in-out;
 						-ms-transition: opacity 0.2s ease-in-out;
 						transition: opacity 0.2s ease-in-out;
-						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %239bf1ff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
+						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %2e2e2e%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						opacity: 0;
 						z-index: 1;
 					}
@@ -3426,6 +3431,10 @@ input, select, textarea {
 			top: 0;
 			width: 100%;
 			z-index: 1;
+		}
+
+		#banner.light:after {
+			opacity: 0.4;
 		}
 
 		#banner h1 {
@@ -4045,11 +4054,13 @@ input, select, textarea {
 
 	.insight {
 		font-weight: bold;
-	    font-size: 1.5em;
+	    font-size: 1.2em;
 	    border: 1px solid;
-	    padding: 30px 20px 20px 20px;
+	    padding: 45px 20px 20px 20px;
 	    text-align: justify;
 	    position: relative;
+	    border-color: #fff;
+	    box-shadow: 5px 5px 0px #fff;
 	}
 	.insight .insight_num {
 		position: absolute;
@@ -4086,31 +4097,50 @@ input, select, textarea {
 			background: #F0403D;
 		}
 
-		.insight.style4, blockquote.style4  {
+		.insight.style4 {
+			background-color: #F5813E;
+		    color: #fff;
+		    
+		}
+
+		blockquote.style4  {
 			color: #F5813E;
 			border-color: #F5813E;
 		}
 
 		.insight.style4 .insight_num {
-			background: #F5813E;
+			background: #fff;
+			color: #F5813E;
 		}
 
-		.insight.style5, blockquote.style5  {
+		.insight.style5 {
+			background-color: #FCC650;
+		    color: #2a3049;
+		}
+
+		blockquote.style5  {
 			color: #FCC650;
 			border-color: #FCC650;
 		}
 
 		.insight.style5 .insight_num {
-			background: #FCC650;
+			background: #fff;
+			color: #FCC650;
 		}
 
-		.insight.style6, blockquote.style6  {
+		.insight.style6 {
+			background-color: #34B575;
+		    color: #fff;
+		}
+
+		blockquote.style6  {
 			color: #34B575;
 			border-color: #34B575;
 		}
 
 		.insight.style6 .insight_num {
-			background: #34B575;
+			background: #fff;
+			color: #34B575;
 		}
 
 	.cover_title {
