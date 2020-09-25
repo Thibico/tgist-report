@@ -4027,7 +4027,7 @@ input, select, textarea {
 
 		.explainer.style2 .label {
 			background-color: #8d82c4;
-		}		
+		}
 
 		.explainer.style3 {
 			box-shadow: 5px 5px 0px #F0403D;
@@ -4150,7 +4150,7 @@ input, select, textarea {
 		.insight.style4 {
 			background-color: #F5813E;
 		    color: #fff;
-		    
+
 		}
 
 		blockquote.style4  {
@@ -4196,10 +4196,10 @@ input, select, textarea {
 	.cover_title {
 		background: #000;
 	    padding: 20px;
-	    width: fit-content;
+	    width: fit-content; /* TODO: Change cover_title div to contain 1 paragraph and a call to action "Read Now" */
 	    margin: auto;
 	    text-align: center;
-	    text-transform: uppercase;
+			text-transform: uppercase;
 	}
 
 	.cover_title h1 {
@@ -4231,7 +4231,7 @@ input, select, textarea {
 	}
 
 	.dot.green {
-		background-color: #34B575;	
+		background-color: #34B575;
 	}
 
 	.dot.yellow {
